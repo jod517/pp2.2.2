@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:spring="http://www.w3.org/1999/XSL/Transform" xmlns:c="">
+<head>
+    <meta charset="UTF-8">
+    <title> Машины / Cars </title>
+</head>
+<body>
+<table border="2">
+    <caption>
+        <spring:message code="text" />
+    </caption>
+    <tr>
+        <th><spring:message code="text1"/></th>
+        <th><spring:message code="text2"/></th>
+        <th><spring:message code="text3"/></th>
+    </tr>
+
+    <c:forEach var="cars" items="${cars}">
+        <tr>
+            <td> ${cars.id}</td>
+            <td> ${cars.name} </td>
+            <td> ${cars.series} </td>
+        </tr>
+    </c:forEach>
+</table>
+</body>
+</html>
