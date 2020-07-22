@@ -15,9 +15,8 @@ public class CarsController {
 
     @RequestMapping(method = RequestMethod.GET)
     public  String  printTable(ModelMap model) {
-        List<Car> cars = CarService.getListCars();
 
-        model.addAttribute("cars", cars);
+        model.addAttribute("cars", CarService.getListCars());
         return "cars";
 
     }

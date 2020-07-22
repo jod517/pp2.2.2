@@ -3,9 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>welcome</title>
 </head>
 <body>
+<h1>
+    <a href="/spring_mvc_war/cars?locale=ru">List of cars in Russian</a>
+    <br>
+    <a href="/spring_mvc_war/cars?locale=en">List of cars in English</a></h1>
+<br>
 <div>
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>

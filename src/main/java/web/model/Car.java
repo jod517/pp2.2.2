@@ -9,11 +9,6 @@ public class Car {
         this.id = id;
     }
 
-    public Car(int i, String name, int series) {
-
-        this.name = name;
-        this.series = series;
-    }
     public Car(Long id,String name, int series) {
         this.id = id;
         this.name = name;
